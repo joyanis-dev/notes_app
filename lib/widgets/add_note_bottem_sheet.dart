@@ -1,45 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:note_app/constants/app_colors.dart';
+import 'package:note_app/widgets/custom_buttom.dart';
+import 'package:note_app/widgets/custom_text_field.dart';
 
 class AddNoteBottomSheet extends StatelessWidget {
   const AddNoteBottomSheet({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(16.0),
-      child: Column(
-        children: [
-          CustomTextField(labelText: 'Title'),
-          SizedBox(height: 10),
-          CustomTextField(labelText: 'Content', maxLines: 5),
-        ],
+    return Padding(
+      padding: EdgeInsets.only(
+        bottom: MediaQuery.of(context).viewInsets.bottom,
       ),
-    );
-  }
-}
-
-class CustomTextField extends StatelessWidget {
-  final String labelText;
-  final int maxLines;
-  const CustomTextField({
-    super.key,
-    required this.labelText,
-    this.maxLines = 1,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return TextField(
-      maxLines: maxLines,
-      decoration: InputDecoration(
-        labelText: labelText,
-        labelStyle: TextStyle(color:kPrimaryColor),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8.0),
-          borderSide: BorderSide(color: kPrimaryColor),
+      child: SingleChildScrollView(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            CustomTextField(labelText: 'Title'),
+            SizedBox(height: 10),
+            CustomTextField(labelText: 'Content', maxLines: 5),
+            SizedBox(height: 60),
+            CustomButton(),
+          ],
         ),
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(8.0)),
       ),
     );
   }
