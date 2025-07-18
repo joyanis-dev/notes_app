@@ -4,15 +4,24 @@ import 'package:note_app/constants/app_colors.dart';
 class CustomTextField extends StatelessWidget {
   final String labelText;
   final int maxLines;
+  final void Function(String?)? onSaved;
   const CustomTextField({
     super.key,
     required this.labelText,
     this.maxLines = 1,
+    this.onSaved,
   });
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
+    return TextFormField(
+      validator: (value) {
+        if (value == null || value.isEmpty) {
+          return 'Please enter $labelText';
+        }
+        return null;
+      },
+      onSaved: onSaved,
       maxLines: maxLines,
       decoration: InputDecoration(
         labelText: labelText,

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:note_app/constants/app_colors.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key});
-
+  const CustomButton({super.key, this.onPressed});
+  final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -13,7 +13,7 @@ class CustomButton extends StatelessWidget {
           backgroundColor: kPrimaryColor, // Use the primary color defined in app_colors.dart
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         ),
-        onPressed: () {},
+        onPressed: onPressed,
         child: const Text(
           'Add Note',
           style: TextStyle(
