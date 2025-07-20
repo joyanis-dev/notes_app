@@ -1,0 +1,113 @@
+[33mcommit 6b1199d842573e876002c8b6306a88b2e3c3d672[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Joy Anis <joyanis00@gmail.com>
+Date:   Sun Jul 20 00:21:29 2025 +0300
+
+    feat: add initial structure for notes cubit and states
+
+[33mcommit f4b6e5957dc4a0e895ddd55ac11c98b3b1dcd114[m
+Author: Joy Anis <joyanis00@gmail.com>
+Date:   Fri Jul 18 15:06:17 2025 +0300
+
+    Add SimpleBlocObserver to manage Bloc state changes and logging
+
+[33mcommit e82f631e8174a5e151eacf9bf8d5bc9cda05ad4f[m
+Author: Joy Anis <joyanis00@gmail.com>
+Date:   Fri Jul 18 14:56:52 2025 +0300
+
+    Add loading state and error handling to AddNotesCubit; integrate ModalProgressHUD in AddNoteBottomSheet
+
+[33mcommit bcde42d8debb2cfa2a3f313d52553500e311466c[m
+Author: Joy Anis <joyanis00@gmail.com>
+Date:   Fri Jul 18 14:12:40 2025 +0300
+
+    Refactor main.dart to integrate MultiBlocProvider for AddNotesCubit
+
+[33mcommit 68da576ab46c537e7f42f86c541c718468fb6134[m
+Author: Joy Anis <joyanis00@gmail.com>
+Date:   Fri Jul 18 14:08:30 2025 +0300
+
+    Refactor addNote method in AddNotesCubit to accept Note object
+
+[33mcommit f13a488b7c124b9742d62672bafcb8f602b09e11[m
+Author: Joy Anis <joyanis00@gmail.com>
+Date:   Fri Jul 18 14:02:38 2025 +0300
+
+    Implement AddNotesCubit and integrate Hive support for Note model
+
+[33mcommit 8eae6d4efa5159972b5527efc0bc4e3b257ffa77[m
+Author: Joy Anis <joyanis00@gmail.com>
+Date:   Fri Jul 18 13:52:17 2025 +0300
+
+    create add notes states
+
+[33mcommit 204c8f13ddabc9700f57103329856b0db39e3252[m
+Author: Joy Anis <joyanis00@gmail.com>
+Date:   Fri Jul 18 13:50:15 2025 +0300
+
+    Add flutter_bloc dependency and create add_notes_cubit and add_notes_states files
+
+[33mcommit 70909d2297a2c5fb58c9458521124d374413adcd[m
+Author: Joy Anis <joyanis00@gmail.com>
+Date:   Fri Jul 18 13:38:22 2025 +0300
+
+    Refactor note editing UI: replace inline fields with EditNoteBody widget and enhance form validation in CustomTextField
+
+[33mcommit c58e023111e266102907a9d02e7b6eef16ecfc46[m
+Author: Joy Anis <joyanis00@gmail.com>
+Date:   Fri Jul 18 01:36:25 2025 +0300
+
+    Implement Hive support for Note model and add generated adapter
+
+[33mcommit ecc83109245eddf0fbbeb32fa72490b64d86c3c2[m
+Author: Joy Anis <joyanis00@gmail.com>
+Date:   Fri Jul 18 00:58:17 2025 +0300
+
+    Add Note model with title, content, createdAt, and color properties
+
+[33mcommit 65f10b4b97d0ab6cd061d9fd41ccf940e3630cb7[m
+Author: Joy Anis <joyanis00@gmail.com>
+Date:   Thu Jul 17 21:54:37 2025 +0300
+
+    Add CustomTextField for title and content in EditNoteView
+
+[33mcommit a0c8bea7e8ad282a13cf55a2655dfd8023594b99[m
+Author: Joy Anis <joyanis00@gmail.com>
+Date:   Thu Jul 17 21:48:52 2025 +0300
+
+    Refactor EditNoteView and CustomAppBar to support back navigation and replace CustomSearchIcon with CustomIcon
+
+[33mcommit cb4b6107a4c73e029210db6ecf4a130896caec28[m
+Author: Joy Anis <joyanis00@gmail.com>
+Date:   Thu Jul 17 21:40:06 2025 +0300
+
+    Refactor note creation UI and implement edit note view
+
+[33mcommit d8f389932b4e8644dac32c27db8890f598514a7c[m
+Author: Joy Anis <joyanis00@gmail.com>
+Date:   Thu Jul 17 18:59:21 2025 +0300
+
+    Refactor notes view and add bottom sheet for note creation
+
+[33mcommit 0c9ef5fdcfb3e83a0d37a46c6dabbb1bc59e80fa[m
+Author: Joy Anis <joyanis00@gmail.com>
+Date:   Thu Jul 17 18:10:38 2025 +0300
+
+    Add floating action button to notes view for adding new notes
+
+[33mcommit 9abd8a778a8c4b898c10f8b8ac300b0255d4894b[m
+Author: Joy Anis <joyanis00@gmail.com>
+Date:   Wed Jul 16 23:30:25 2025 +0300
+
+    Implement notes view structure with custom app bar and list items
+
+[33mcommit 8b0c258cda255667f3c8eb525d2dce32db867152[m
+Author: Joy Anis <joyanis00@gmail.com>
+Date:   Wed Jul 16 13:58:09 2025 +0300
+
+    change theme and create notes view
+
+[33mcommit d80826278b78a7cf3bf8dd79b5e71f7fe732124f[m
+Author: Joy Anis <joyanis00@gmail.com>
+Date:   Wed Jul 16 13:41:17 2025 +0300
+
+    first commit

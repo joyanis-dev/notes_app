@@ -10,23 +10,18 @@ void main() async {
   Bloc.observer = SimpleBlocObserver();
   await Hive.initFlutter();
   Hive.registerAdapter(NoteAdapter());
-  await Hive.openBox('notes');
+  await Hive.openBox<Note>('notes');
+
   runApp(const NoteApp());
 }
 
 class NoteApp extends StatelessWidget {
   const NoteApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: [
-        BlocProvider(
-          create: (context) => AddNotesCubit(),
-        ),
-        
-      ],
+      providers: [BlocProvider(create: (context) => AddNotesCubit())],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
 

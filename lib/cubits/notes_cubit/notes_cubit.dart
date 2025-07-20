@@ -10,12 +10,9 @@ class NotesCubit extends Cubit<NotesState> {
   List<Note>? notes;
 
   void fetchNotes() {
-    try {
+   
       final notesBox = Hive.box<Note>('notes');
       notes = notesBox.values.toList();
-      emit(NotesLoaded(notes!));
-    } catch (e) {
-      emit(NotesError(e.toString()));
-    }
+   
   }
 }
