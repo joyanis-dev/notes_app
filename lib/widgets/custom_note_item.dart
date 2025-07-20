@@ -43,7 +43,11 @@ class CustomNoteItem extends StatelessWidget {
                 padding: EdgeInsets.zero,
                 icon: const Icon(Icons.delete, color: Colors.black, size: 30),
                 onPressed: () {
-                  // Handle delete action
+                  // Implement delete functionality here
+                  note.delete();
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Delete functionality not implemented')),
+                  );
                 },
               ),
             ),
