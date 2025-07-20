@@ -50,7 +50,7 @@ class CustomNoteItem extends StatelessWidget {
             const SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.only(right: 10),
-              child: Text('huu', style: AppTextStyles.bodyText),
+              child: Text(note.createdAt.toString(), style: AppTextStyles.bodyText),
             ),
           ],
         ),
